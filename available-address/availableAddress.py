@@ -33,3 +33,5 @@ ssh.connect(hostname='1.1.1.1',
 scp = SCPClient(ssh.get_transport())
 scp.put('/root/python/availableAddress/availableAddress.txt', '/mnt/Home-Storage/bigdata/dvir-data')
 scp.close()
+
+# push test
