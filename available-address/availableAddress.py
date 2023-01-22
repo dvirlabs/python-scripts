@@ -21,7 +21,7 @@ with open ('/root/python/availableAddress/allIpAddress.txt' , 'r') as allIpAddre
 with open ('/root/python/availableAddress/availableAddress.txt' , 'a') as availableAddress:
     availableAddress.write("\n" + "################ Avilable address to this day: " + str(getDate[1]) + " ################" + "\n" + "\n")
             
-# Send the txt file to TrueNAS (or another linux)
+# Send the txt file to TrueNAS (or another Linux Machine)
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
